@@ -18,4 +18,20 @@ console.log("¿Que tal estas, $(username)?");
 userAge = 33; //Number
 userHasHair = false; //Boolean
 
+
+
+a = 1;
+b = 2;
+
+console.log(a,b); // 2, 1
+
+
+c = a;
+a = b;
+b = c;
+
+console.log(a,b)
+
+
+
 //TODO: Objects
