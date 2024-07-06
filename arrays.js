@@ -1,124 +1,110 @@
-console.log(este es el JS de los arrays);
+console.log("Este es el JS de los arrays");
 
-data = ["dog", "😻", 23, true];
+let data = ["dog", "😻", 23, true];
 
-console.log(data)
+console.log(data);
 
-dog = "🐶";
-cat = "😻";
-raccoon = "🦝";
-pig = "🐷"
-koala = "🐨"
+let dog = "🐶";
+let cat = "😻";
+let raccoon = "🦝";
+let pig = "🐷";
+let koala = "🐨";
 
-animals = [dog, cat, racoon, pig, koala, koala, koala];
+let animals = [dog, cat, raccoon, pig, koala, koala, koala];
 
 console.log(animals);
 
 console.log(data[1]);
 
-console.log(el array tiene (data.lenght) elements);
-
+console.log(`El array tiene ${data.length} elementos`); // Uso de template literals para insertar variables en la cadena
 
 // -----------------------------------------------------------
 
-
-alumno = {
+let alumno = {
     nombre: "Gonzalo",
     apellido: "Pino",
     edad: 41,
-    hobbie: "🎮"
-    animales: "[koala, animals[1]]"
-
-}
+    hobbie: "🎮",
+    animales: [koala, animals[1]] // Correctamente asignar un array en lugar de una cadena
+};
 
 console.log(alumno);
 
-alumno.edad = 46; //escritura de una propiedad de un objeto
-edadGonzalo = alumno.edad; // lectura de una propiedad de un objeto
+alumno.edad = 46; // Escritura de una propiedad de un objeto
+let edadGonzalo = alumno.edad; // Lectura de una propiedad de un objeto
 
-console.log("El {alumno.nombre} {tiene {alumno.edad} años y le gusta {alumno.hobbie} ");
+console.log(`El ${alumno.nombre} tiene ${alumno.edad} años y le gusta ${alumno.hobbie}`); // Uso de template literals
 
-profe = {mochila: "🟠", barba: true}
+let profe = { mochila: "🟠", barba: true };
 
 console.log(profe);
 
-profe.nombre ="Omar"
-profe.edad = 33
+profe.nombre = "Omar";
+profe.edad = 33;
 
 console.log(profe);
 
 // -------------------------------
 
-
-console.log(ejercicios y arrays)
+console.log("Ejercicios y arrays");
 
 // TODO: crear un array con 5 objetos dentro que tengan las mismas 4 propiedades
 
-let coches [
+let coches = [
     {
-    marca: Jaguar;
-    modelo: XSLTProcessor;
-    año: 2021;
-    color: verde;
+        marca: "Jaguar",
+        modelo: "XSLTProcessor",
+        año: 2021,
+        color: "verde"
+    },
+    {
+        marca: "Seat",
+        modelo: "Panda",
+        año: 2018,
+        color: "rojo"
+    },
+    {
+        marca: "Land Rober",
+        modelo: "PI",
+        año: 2024,
+        color: "gris"
+    },
+    {
+        marca: "Renault",
+        modelo: "Nevada",
+        año: 1976,
+        color: "metalico"
+    },
+    {
+        marca: "Mercedes",
+        modelo: "C1",
+        año: 2000,
+        color: "amarillo"
     }
-
-    {
-        marca: Seat;
-        modelo: Panda;
-        año: 2018;
-        color: rojo;
-        }
-
-        {
-            marca: Land Rober;
-            modelo: PI;
-            año: 2024;
-            color: gris;
-            }
-
-            {
-                marca: Renault;
-                modelo: Nevada;
-                año: 1976;
-                color: metalico;
-                }
-
-                {
-                    marca: Mercedes;
-                    modelo: C1;
-                    año: 2000;
-                    color: amarillo;
-                    }
 ];
 
 console.log(coches);
 
-
-
 // TODO: crear un array que contenga una lista de una de las propiedades de los objetos
-let listaDeMarcas = coche.marca
+let listaDeMarcas = coches.map(coche => coche.marca);
 
 console.log(listaDeMarcas);
 
-
-
 // TODO: crear un array que contenga la suma de una propiedad (que sea numerica)
+let sumaDeAños = coches.reduce((total, coche) => total + coche.año, 0);
+let arraySumaDeAños = [sumaDeAños];
 
-let arraySumaDeAños = [sumaDeAños]
-
-console.log(sumaDeAños);
-
-
+console.log(arraySumaDeAños);
 
 // TODO: mostrar por consola todo lo anterior
 
-OK
+console.log(listaDeMarcas);
+console.log(arraySumaDeAños);
 
 // TODO: mostrar por consola una frase que resuma las propiedades de cada objeto
-
-console.log("El coche de la marca ${marca.coche} y modelo ${modelo.coche} del año ${año.coche} es de color ${color.coche} ")
-
+coches.forEach(coche => {
+    console.log(`El coche de la marca ${coche.marca} y modelo ${coche.modelo} del año ${coche.año} es de color ${coche.color}`);
+});
 
 // TODO: buscar una manera de mostrar todos los objetos en forma de tabla
-
-console.table Pokemon
+console.table(coches);
