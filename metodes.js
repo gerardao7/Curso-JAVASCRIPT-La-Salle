@@ -1,0 +1,1 @@
+console.log("Metodes arrays i strings")

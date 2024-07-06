@@ -1,4 +1,4 @@
-console.log(Este es el JS de los arrays);
+console.log(este es el JS de los arrays);
 
 data = ["dog", "😻", 23, true];
 
@@ -14,9 +14,9 @@ animals = [dog, cat, racoon, pig, koala, koala, koala];
 
 console.log(animals);
 
-console.log(data[1]};)
+console.log(data[1]);
 
-console.log(él array tiene (data.lenght) elements);
+console.log(el array tiene (data.lenght) elements);
 
 
 // -----------------------------------------------------------
@@ -48,6 +48,9 @@ profe.edad = 33
 console.log(profe);
 
 // -------------------------------
+
+
+console.log(ejercicios y arrays)
 
 // TODO: crear un array con 5 objetos dentro que tengan las mismas 4 propiedades
 
@@ -113,8 +116,9 @@ OK
 
 // TODO: mostrar por consola una frase que resuma las propiedades de cada objeto
 
-console.log("El coche de la marca {marca.coche} y modelo {modelo.coche} del año {año.coche} es de color {color.coche} ")
+console.log("El coche de la marca ${marca.coche} y modelo ${modelo.coche} del año ${año.coche} es de color ${color.coche} ")
 
 
 // TODO: buscar una manera de mostrar todos los objetos en forma de tabla
 
+console.table Pokemon
