@@ -45,6 +45,29 @@ console.log(customParseFloat("234.1234.25.5"));    // 234.1234
 
 // TODO: crea una funció que agafi un string i que torni una lletra aleatoria (sense contar espais i signes de puntuació)
 
+function getRandomLetter(str) {
+    // Eliminar espais i signes de puntuació
+    let cleanedStr = str.replace(/[^a-zA-Z]/g, '');
+
+    // Si la cadena està buida després de netejar-la, retornar null
+    if (cleanedStr.length === 0) {
+        return null;
+    }
+
+    // Generar un índex aleatori
+    let randomIndex = Math.floor(Math.random() * cleanedStr.length);
+
+    // Retornar la lletra en la posició aleatòria
+    return cleanedStr[randomIndex];
+}
+
+// Exemple d'ús
+let exampleString = "Hola, món!";
+let randomLetter = getRandomLetter(exampleString);
+console.log(randomLetter);
+
+
+
 // TODO: crea una funció que agafi un text i li'n separi les paraules (sense signes de puntuació) i les torni en un nou string separades per espais (sense usar arrays)
 
 // TODO: crea una funció que agafi un string i que torni una paraula aleatòria continguda en ella (sense usar arrays)
