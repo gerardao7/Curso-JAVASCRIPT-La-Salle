@@ -62,7 +62,7 @@ alumnos.forEach(alumno => {
 });
 
 
-// TODO: escribe un bucle que muestre 10 veces un mensaje por la consola con el text en color rojo y azul alternativamente
+// escribe un bucle que muestre 10 veces un mensaje por la consola con el text en color rojo y azul alternativamente
 
 for (let i = 0; i < 10; i++) {
     if (i % 2 === 0) {
@@ -73,7 +73,7 @@ for (let i = 0; i < 10; i++) {
 }
 
 
-// TODO: escribe un bucle que muestre los números del 0 al 20 y muestre a su lado "hola" si es multiple de 2, "adeu" si es multiple de 3 i "què tal?" si es múltiple de 5
+// escribe un bucle que muestre los números del 0 al 20 y muestre a su lado "hola" si es multiple de 2, "adeu" si es multiple de 3 i "què tal?" si es múltiple de 5
 
 
 for (let i = 0; i <= 20; i++) {
@@ -94,20 +94,12 @@ for (let i = 0; i <= 20; i++) {
 
 // TODO: fes un contador que mostri a la consola els números de l'1 al número que introdueixis com a paràmentre (fins a 1000 com a màxim)
 
-// Solicitar al usuario que introduzca un número
-let maxNumber = prompt("Introduce un número (máximo 1000):");
 
-// Convertir el valor ingresado a número entero
-maxNumber = parseInt(maxNumber, 10);
-
-// Verificar si el valor ingresado es un número válido y está dentro del rango permitido
-if (!isNaN(maxNumber) && maxNumber > 0 && maxNumber <= 1000) {
-    // Bucle para mostrar los números del 1 al número introducido
-    for (let i = 1; i <= maxNumber; i++) {
+function contarMil(num) {
+    for (let i=1; i<=1000, i++) {
         console.log(i);
+        if(i == num) break; // para el bucle
     }
-} else {
-    console.log("Por favor, introduce un número válido entre 1 y 1000.");
 }
 
 
@@ -115,12 +107,12 @@ if (!isNaN(maxNumber) && maxNumber > 0 && maxNumber <= 1000) {
 
 
 // Pedir al usuario que introduzca una cadena de dígitos
-let digits = prompt("Introduce una cadena de dígitos:");
+let digitos = prompt("Introduce una cadena de dígitos:");
 
 // Función para comprobar si un número contiene al menos un dígito de la cadena
-function containsAnyDigit(number, digits) {
-    for (let digit of digits) {
-        if (number.toString().includes(digit)) {
+function containsAnyDigit(number, digitos) {
+    for (let digito of digitos) {
+        if (number.toString().includes(digito)) {
             return true;
         }
     }
@@ -129,7 +121,7 @@ function containsAnyDigit(number, digits) {
 
 // Bucle para mostrar los números del 0 al 100 que contienen al menos un dígito de la cadena
 for (let i = 0; i <= 100; i++) {
-    if (containsAnyDigit(i, digits)) {
+    if (containsAnyDigit(i, digitos)) {
         console.log(i);
     }
 }
@@ -141,28 +133,21 @@ for (let i = 0; i <= 100; i++) {
 //                       - Mantega
 //                       - Aigua
 
-// Definir la palabra clave para detener la entrada
-const stopWord = "fi";
+function listaCompra() {
+    let element = ""
+    let lista = "lista de la compra:\n"
 
-// Inicializar un array para almacenar los ítems de la lista de la compra
-let shoppingList = [];
-
-// Bucle para solicitar ítems hasta que se introduzca la palabra clave
-while (true) {
-    // Solicitar al usuario que introduzca un ítem de la lista de la compra
-    let item = prompt("Introduce un ítem de la lista de la compra (escribe 'fi' para terminar):");
-
-    // Comprobar si el usuario ha introducido la palabra clave
-    if (item.toLowerCase() === stopWord) {
-        break;
-    }
-
-    // Añadir el ítem a la lista de la compra
-    shoppingList.push(item);
+    while (element == "stop") {
+        element = prompt("Introduce el siguiente elemento de la lista de la compra. Escribe STOP para acabar")
+        element = element[0]
+        
+        if element = element.toLowerCase()
+        if (element == null) break;
+}
+    console.log(lista);
 }
 
-// Mostrar la lista de la compra en el formato especificado
-console.log("Llista de la compra:");
-shoppingList.forEach(function(item) {
-    console.log("- " + item);
-});
+
+
+
+
