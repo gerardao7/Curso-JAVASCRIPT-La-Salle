@@ -69,6 +69,15 @@ Repositori pel mòdul de JavaScript del curs de frontend de La Salle (28 de juny
 
 ## Extres
 
-- [Lofi medieval](https://www.youtube.com/watch?v=_uMuuHk_KkQ&ab_channel=LofiGirl)
-- [Lofi girl](https://www.youtube.com/watch?v=jfKfPfyJRdk) (hiphop)
-- [Synthwave boy](https://www.youtube.com/watch?v=4xDzrJKXOOY)
+- Article sobre [rendiment dels diferents loops](https://garden.bradwoods.io/notes/javascript/performance/loops)
+- Llenguatge de programació de visuals: [Processing](https://processing.org/)
+    - Canal de YouTube: [The Coding Train](https://www.youtube.com/thecodingtrain)
+    - [Llista de reproducció de p5.js](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6Zy51Q-x9tMWIv9cueOFTFA)
+- [Pàgina de Google morse](https://experiments.withgoogle.com/collection/morse) 
+    - [Aplicació](https://morse-learn.acecentre.net/) per aprendre morse
+- Aplicació per escriure pseudo-codi: [PSeInt](https://pseint.sourceforge.net/)
+- [Alfabet radiofònic](https://ca.wikipedia.org/wiki/Alfabet_fon%C3%A8tic_de_l%27OTAN) (alpha, bravo, charlie, delta...)
+- Música per programar:
+    - [Lofi medieval](https://www.youtube.com/watch?v=_uMuuHk_KkQ&ab_channel=LofiGirl)
+    - [Lofi girl](https://www.youtube.com/watch?v=jfKfPfyJRdk) (hiphop)
+    - [Synthwave boy](https://www.youtube.com/watch?v=4xDzrJKXOOY)
