@@ -75,77 +75,77 @@ for (let i = 0; i < 10; i++) {
 
 // escribe un bucle que muestre los números del 0 al 20 y muestre a su lado "hola" si es multiple de 2, "adeu" si es multiple de 3 i "què tal?" si es múltiple de 5
 
-
-for (let i = 0; i <= 20; i++) {
-    let message = '';
-
-    if (i % 2 === 0) {
-        message += ' hola';
-    }
-    if (i % 3 === 0) {
-        message += ' adeu';
-    }
-    if (i % 5 === 0) {
-        message += ' què tal?';
-    }
-
-    console.log(i + message);
-}
-
-// TODO: fes un contador que mostri a la consola els números de l'1 al número que introdueixis com a paràmentre (fins a 1000 com a màxim)
-
-
-function contarMil(num) {
-    for (let i=1; i<=1000, i++) {
-        console.log(i);
-        if(i == num) break; // para el bucle
-    }
+for (let i = 1; i < 21; i++) {
+    let missatge = i
+    if (i % 2 === 0) missatge += " hola"
+    if (i % 3 === 0) missatge += " adeu"
+    if (i % 5 === 0) missatge += " què tal?"
+    console.log(missatge);
 }
 
 
-// TODO: fes un contador que només mostri els números que tinguin un dígit contingut a la string definida per l'usuari (amb prompt) fins a 100
+// fes un contador que mostri a la consola els números de l'1 al número que introdueixis com a paràmentre (fins a 1000 com a màxim)
+
+function contar(num) {
+    if (num > 1000) {
+        console.log("El nombre no pot ser més gran que 1000");
+        return;
+    }
+    
+    if (num < 1) console.log("El nombre no pot ser més petit que 1");
+
+    for (let i = 1; i <= num; i++) console.log(i);
+}
+
+contar(25)
+contar(1200)    // ! Comprovo els errors
+contar(-30)
+contar(0)
 
 
-// Pedir al usuario que introduzca una cadena de dígitos
-let digitos = prompt("Introduce una cadena de dígitos:");
 
-// Función para comprobar si un número contiene al menos un dígito de la cadena
-function containsAnyDigit(number, digitos) {
-    for (let digito of digitos) {
-        if (number.toString().includes(digito)) {
-            return true;
+// fes un contador que només mostri els números que tinguin un dígit contingut a la string definida per l'usuari (amb prompt) fins a 100
+
+function mostrarDigitos() {
+    let digitos = prompt("Introduce los dígitos que quieres mostrar")
+    
+    for (let i = 0; i < 101; i++) {
+        let string = i.toString()
+        
+        for (const char of string) {
+            if (digitos.includes(char)) {
+                console.log(i);
+                break;
+            }
         }
     }
-    return false;
 }
 
-// Bucle para mostrar los números del 0 al 100 que contienen al menos un dígito de la cadena
-for (let i = 0; i <= 100; i++) {
-    if (containsAnyDigit(i, digitos)) {
-        console.log(i);
-    }
-}
+// mostrarDigitos()
 
 
-// TODO: llista de la compra. Fes que un prompt es repeteixi fins que l'usuari introdueixi una paraula clau (useu BREAK); fins llavors, cada paraula introduida serà un item de la llista de la compra, que s'escriurà després de que l'usuari l'aturi amb el format:       
+
+// llista de la compra. Fes que un prompt es repeteixi fins que l'usuari introdueixi una paraula clau (useu BREAK); fins llavors, cada paraula introduida serà un item de la llista de la compra, que s'escriurà després de que l'usuari l'aturi amb el format:       
 //                       Llista de la compra:
 //                       - Pa
 //                       - Mantega
 //                       - Aigua
 
-function listaCompra() {
+function llistaCompra() {
     let element = ""
-    let lista = "lista de la compra:\n"
+    let llista = "Llista de la compra:\n"
 
-    while (element == "stop") {
-        element = prompt("Introduce el siguiente elemento de la lista de la compra. Escribe STOP para acabar")
-        element = element[0]
-        
-        if element = element.toLowerCase()
+    while (element != "Stop") {
+        element = prompt("Introdueix el següent element de la llista de la compra. Escriu STOP per acabar").trim()
+        element = element[0].toUpperCase() + element.slice(1).toLowerCase()
+        if(element && element != "Stop") llista += "- " + element + "\n"
         if (element == null) break;
+    }
+
+    console.log(llista);
 }
-    console.log(lista);
-}
+
+llistaCompra()
 
 
 
