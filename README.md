@@ -38,6 +38,8 @@ Repositori pel mòdul de JavaScript del curs de frontend de La Salle (28 de juny
 - Una única finestra del VSC (amb la **carpeta general** que conté els repos)
 - Trabajar siempre en el repo
 
+- [Apunts HTML + CSS + JS](http://gerardao7.github.io/Curso-JAVASCRIPT-La-Salle/apuntes.html)
+
 ## Github
 
 - Mètode infalible per crear repos sense problemes:
